@@ -7,9 +7,8 @@ body { overflow-x: hidden; }
     height: 50px;
     border-radius: 3px;
 }
-.ribbon-row {
-    width: 100%;
-    height: auto;
+.segment {
+    padding: 50px 0 100px 0;
 }
 .how-icon {
     width: 120px;
@@ -18,7 +17,7 @@ body { overflow-x: hidden; }
     border-radius: 5px;
     padding: 10px;
 }
-.divvy {
+.outline {
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid green;
@@ -34,4 +33,7 @@ footer {
 .copyright {
     margin-top: 10px; 
     border-top: 1px solid rgb(37, 151, 63);
+}
+.subtle-green {
+    background-color: rgb(225, 250, 230);
 }
