@@ -17,11 +17,6 @@ body { overflow-x: hidden; }
     border-radius: 5px;
     padding: 10px;
 }
-.borderbtm {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #28A745;
-}
 .smoothie-icon {
     width: 200px;
     height: 200px;
