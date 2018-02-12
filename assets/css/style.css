@@ -1,3 +1,4 @@
+body { overflow-x: hidden; }
 .navbar {
     border-bottom: 1px solid green;
 }
@@ -25,10 +26,6 @@
 .smoothie-icon {
     width: 200px;
     height: 200px;
-}
-.team {
-    width: 320px;
-    height: 250px;
 }
 footer {
     background-color: #28A745;
