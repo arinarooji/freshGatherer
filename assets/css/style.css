@@ -32,3 +32,10 @@ footer {
 .subtle-green {
     background-color: rgb(225, 250, 230);
 }
+/* Page Animation */
+.fadeIn { animation: fadeIn 2s both; }
+@keyframes fadeIn {
+    0%    { opacity: 0; }
+    50%   { opacity: 0; }
+    100%  { opacity: 1; }
+}
