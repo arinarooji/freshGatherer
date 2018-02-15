@@ -46,13 +46,13 @@
         <div id="carouselControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid" src="assets/images/carousel/img0.jpeg" alt="Smoothies">
+                    <img class="d-block w-100" src="assets/images/carousel/img2.jpeg" alt="Grape smoothie">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="assets/images/carousel/img1.jpeg" alt="Raspberries">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/carousel/img2.jpeg" alt="Grape smoothie">
+                    <img class="d-block w-100" src="assets/images/carousel/img0.jpeg" alt="Smoothies">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="assets/images/carousel/img3.jpeg" alt="Blueberries">
@@ -126,8 +126,8 @@
                         <strong>10 Smoothie Blends</strong>
                     </h6>
                     <h6>$7.50 per smoothie | $75.00 per box</h6>
-                    <button type="button" id="buy" class="btn btn-block btn-success plan-btn plan-1" plan-name="Baby Seedling" plan-cost=7 5.00
-                        plan-qty=1 0>BLEND ME!</button>
+                    <button type="button" id="buy" class="btn btn-block btn-success plan-btn plan-1" plan-name="Baby Seedling" plan-cost=75.00
+                        plan-qty=10>BLEND ME!</button>
                 </div>
                 <div class="col-xs-12 col-sm-4 pb-4">
                     <h5 class="lead">
@@ -138,8 +138,8 @@
                         <strong>20 Smoothie Blends</strong>
                     </h6>
                     <h6>$7.00 per smoothie | $140.00 per box</h6>
-                    <button type="button" id="buy" class="btn btn-block btn-success plan-btn plan-2" plan-name="Fender Blender" plan-cost=1 40.00
-                        plan-qty=2 0>BLEND ME!</button>
+                    <button type="button" id="buy" class="btn btn-block btn-success plan-btn plan-2" plan-name="Fender Blender" plan-cost=140.00
+                        plan-qty=20>BLEND ME!</button>
                 </div>
                 <div class="col-xs-12 col-sm-4 pb-4">
                     <h5 class="lead">
@@ -150,8 +150,8 @@
                         <strong>30 Smoothie Blends</strong>
                     </h6>
                     <h6>$6.50 per smoothie | $195.00 per box</h6>
-                    <button type="button" id="buy" class="btn btn-block btn-success plan-btn plan-3" plan-name="Smooth Operator" plan-cost=1
-                        95.00 plan-qty=3 0>BLEND ME!</button>
+                    <button type="button" id="buy" class="btn btn-block btn-success plan-btn plan-3" plan-name="Smooth Operator" plan-cost=195.00 
+                        plan-qty=30>BLEND ME!</button>
                 </div>
             </div>
         </div>
@@ -161,16 +161,16 @@
     <div id="smoothies" class="segment subtle-green">
         <h1 class="text-center display-4 py-4">SMOOTHIES</h1>
         <div id="fourth" class="container text-center">
-            <div id="shopifyImg" class="row">
+            <div id="shopifyImg" class="row pb-4">
                 <!-- Smoothie images will appear here -->
                 <!-- Due to Shopify's limited trial period, 
                     Fresh Gatherer's smoothie info/products will not be retrieved from Shopify -->
-                <i class="text-center">
-                    *Dear viewer, Fresh Gatherer is currently a business concept. We'll be sure to let you know if we start operations soon!
-                    Our website utilizes the Shopify API, a paid API that enables us to easily retail our products to online
-                    customers. Due to the concept stage of Fresh Gatherer and Shopify's limited free trial, Shopify has been temporarily disabled.
-                </i>
             </div>
+            <i class="text-center">
+                *Dear viewer, Fresh Gatherer is currently a business concept. We'll be sure to let you know if we start operations soon!
+                Our website utilizes the Shopify API, a paid API that enables us to easily retail our products to online
+                customers. Due to the concept stage of Fresh Gatherer and Shopify's limited free trial, Shopify has been temporarily disabled.
+            </i>
         </div>
     </div>
 
@@ -189,7 +189,7 @@
                                 <img src="" class="modal-img img-fluid">
                             </div>
                             <!--Smoothie text-->
-                            <div class="col-md-8">
+                            <div class="col-md-8 pt-3">
                                 <h6 class="modal-title"></h6>
                                 <p class="modal-details"></p>
                             </div>
@@ -197,7 +197,6 @@
                         <!--Modal footer for options-->
                         <div class="modal-footer">
                             <div class="form-group">
-                                <label for="quantity">Quantity:</label>
                                 <select class="form-control" id="quantity">
                                     <option>1</option>
                                     <option>2</option>
@@ -211,7 +210,10 @@
                                     <option>10</option>
                                 </select>
                             </div>
-                            <button type="button" class="btn btn-outline-success add-btn" data-toggle="modal" data-target="#product-view">Add</button>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-outline-success add-btn" data-toggle="modal" data-target="#product-view">Add</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -280,7 +282,7 @@
                         <div class="modal-footer">
                             <h6 class="subtotal">Subtotal: </h6>
                             <button type="submit" id="mapBtn" class="btn btn-primary map-btn">Map</button>
-                            <a class="checkout-link" href="#" target="_blank">
+                            <a class="checkout-link" href="#">
                                 <button type="button" class="btn btn-success checkout-btn">Checkout</button>
                             </a>
                         </div>
@@ -328,10 +330,14 @@
     <script src="https://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
     <!-- google distance matrix  -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlOd3hYpDLPAdKLwjmQV9lJTiGVtiewcc&callback=initMap"></script>
-
+    
     <!-- Custom JavaScript-->
     <script src="assets/js/maps.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/smoothies.js"></script>
+
+    <!-- Use if Shopify is enabled-->
+    <!-- <script src="assets/js/app.js"></script> -->
+
 </body>
 
 </html>

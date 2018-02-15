@@ -11,7 +11,7 @@ var shopClient = ShopifyBuy.buildClient({
 
 //When document is ready...
 $(document).ready(function () {
-
+    
     //Store user's subtotal (prices retrieved from server)
     var planName = 0,
         planCost = 0,

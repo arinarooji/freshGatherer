@@ -21,6 +21,9 @@ body { overflow-x: hidden; }
     width: 200px;
     height: 200px;
 }
+.smoothie:hover {
+    cursor: pointer;
+}
 footer {
     background-color: #28A745;
     padding: 10px 0 5px 0;
